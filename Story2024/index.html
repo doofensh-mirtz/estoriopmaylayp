@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estori op may Layp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/mylifelogo.png" alt="mylife logo">
+            </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openDialog('loginDialog')">Login</a></li>
+                <li><a href="#" onclick="openDialog('registerDialog')">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <section class="home">
+                <h1>Welcome to My Life!</h1>
+                <p>Survived 2024...Barely!</p>
+                <p>A year full of epic wins, facepalms, and questionable decisions. 🤡</p>
+                <button onclick="changeTabTitleAndRedirect()" class="cta-button">Enter at your own risk.</button>
+            </section>
+
+            <div class="timeline">
+                <h2>📅 2024: The Madness</h2>
+                <div class="event">
+                    <h3>🎇 January - New Year, New Me... Kinda</h3>
+                    <p>Promised to fix my sleep schedule… stayed up till 4 AM instead. 🛏️📱</p>
+                </div>
+                <div class="event">
+                    <h3>💘 February – The Love Month Disaster</h3>
+                    <p>Tried to be romantic… ended up embarrassing myself 😭📱</p>
+                </div>
+                <div class="event">
+                    <h3>⏳ March – The ‘I’ll Start Tomorrow’ Marathon</h3>
+                    <p>Planned to be productive… procrastinated instead 🤦‍♂️🔄</p>
+                </div>
+                <div class="event">
+                    <h3>😂 April – The Prank Backfired</h3>
+                    <p>Tried an april fool’s prank… became the victim instead 🤡💀</p>
+                </div>
+                <div class="event">
+                    <h3>☀️ May – The ‘Summer Body’ That Never Happened</h3>
+                    <p>Promised to get fit before summer… Oops 🍕🏋️‍♂️</p>
+                </div>
+                <div class="event">
+                    <h3>🧠 June – The Cube God Awakens</h3>
+                    <p>Solved a Rubik’s Cube Faster Than My Friend Could Open a Bag of Chips. 🤯🔥</p>
+                </div>
+                <div class="event">
+                    <h3>🥇 July – The Olympic-Level Laziness</h3>
+                    <p>Spent the whole month perfecting the art of doing nothing. 🍕📺</p>
+                </div>
+                <div class="event">
+                    <h3>📚 August – The ‘Back to School’ Struggle</h3>
+                    <p>First day of class… already counting down to vacation. 🤓📅</p>
+                </div>
+                <div class="event">
+                    <h3>📱 September – The ‘Everyone Forgot Until Facebook Reminded Them’ Tragedy</h3>
+                    <p>My Birthday? Oh, You mean that day Facebook saved me? 😅🎂</p>
+                </div>
+                <div class="event">
+                    <h3>👨‍💻 October – The CSS Nightmare</h3>
+                    <p>Tried to make my website pretty... ended up with a picasso painting. 🎨🚶‍♂️</p>
+                </div>
+                <div class="event">
+                    <h3>📚 November – The Exam Season Horror</h3>
+                    <p>Professors in November: ‘You thought this semester was easy? Think again.</p>
+                </div>
+                <div class="event">
+                    <h3>🎄 December – The Year in Review (Total Chaos Edition)</h3>
+                    <p>Looked back at 2024… laughed, cried, facepalmed.🎆😆</p>
+                </div>
+            </div>
+
+            <div class="section gallery">
+                <h2>📸 Evidence of My 2024 Shenanigans</h2>
+                <img src="assets/memory1.jpg" alt="duwa chess">
+                <img src="assets/memory2.jpg" alt="julius bayot">
+                <img src="assets/memory3.jpg" alt="kenjie tulog">
+            </div>
+        <section class="lessons">
+            <h2>🤔 Lessons Learned</h2>
+            <div class="lessons-container">
+            <div class="lesson-card">✏️ Never lend someone a pen. You’ll never see it again.</div>
+            <div class="lesson-card">⏳ I don’t do things late—I do them right before the deadline for maximum efficiency.</div>
+             <div class="lesson-card">😴 A 10-minute nap is either the best decision of the day… or a 3-hour accidental coma.</div>
+        </div>
+    </section>
+
+        
+            
+        <div id="loginDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="close" onclick="closeDialog('loginDialog')">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" placeholder="Enter Username" required>
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter Password" required>
+                    <button type="submit" class="button">Login</button>
+                </form>
+            </div>
+        </div>
+        <div id="registerDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="close" onclick="closeDialog('registerDialog')">&times;</span>
+                <h2>Register</h2>
+                <form>
+                    <label for="register-username">Username</label>
+                    <input type="text" id="register-username" placeholder="Enter Username" required>
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" placeholder="Enter Email" required>
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" placeholder="Enter Password" required>
+                    <button type="submit" class="button">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Estori op may Layp. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
